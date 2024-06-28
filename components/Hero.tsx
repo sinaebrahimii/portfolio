@@ -1,6 +1,8 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -33,14 +35,23 @@ const Hero = () => {
       </div>
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center ">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Boobi is Goood
-          </h2>
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl "
-            words="Transformin Concepts into Seamless Experience"
+            className="text-center text-[40px] md:text-5xl lg:text-5xl "
+            words="Transforming Concepts into Seamless user Experiences"
           />
-          <p className="text-sm mt-4 ">FrontEnd Developer </p>
+          <h2 className="uppercase tracking-widest text-sm text-center text-blue-100 max-w-80 mt-4">
+            Hi I'm Sina
+          </h2>
+          <h2 className="uppercase tracking-widest text-sm text-center text-blue-100 max-w-80 ">
+            Frontend Developer specializing in Next.js and React
+          </h2>
+          <a href="#about">
+            <MagicButton
+              title="See My Work"
+              position="right"
+              icon={<FaLocationArrow />}
+            ></MagicButton>
+          </a>
         </div>
       </div>
     </div>
